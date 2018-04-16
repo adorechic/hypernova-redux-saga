@@ -5,18 +5,15 @@ import hypernova, { serialize, load } from 'hypernova';
 
 export const renderReact = (name, component, store) => hypernova({
   server() {
-    return (props) => {
-      const comp = React.createElement(component, props);
-      const promise = store.runSaga().done.then(() => {
-        const contents = ReactDOMServer.renderToString(comp);
-        return serialize(name, contents, props);
-      });
+    const promise = store.runSaga().done.then(() => {
+      const contents = ReactDOMServer.renderToString(component);
+      return serialize(name, contents, props);
+    });
 
-      ReactDOMServer.renderToString(comp);
-      store.close();
+    ReactDOMServer.renderToString(component);
+    store.close();
 
-      return promise;
-    };
+    return promise;
   },
 
   client() {
