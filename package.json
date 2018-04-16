@@ -2,7 +2,7 @@
   "name": "hypernova-redux-saga",
   "version": "0.0.1",
   "description": "redux-saga bindings for hypernova",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "babel --presets es2015 -d lib src",
     "postinstall": "postinstall-build lib \"npm run build\"",
