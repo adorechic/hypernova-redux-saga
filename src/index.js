@@ -17,13 +17,13 @@ export const renderReact = (name, component, store) => hypernova({
   },
 
   client() {
+    store.runSaga();
     const payloads = load(name);
 
     if (payloads) {
       payloads.forEach((payload) => {
         const { node, data } = payload;
         const element = React.createElement(component, data);
-        store.runSaga()
 
         if (ReactDOM.hydrate) {
           ReactDOM.hydrate(element, node);
