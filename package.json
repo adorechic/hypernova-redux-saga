@@ -1,0 +1,19 @@
+{
+  "name": "hypernova-redux-saga",
+  "version": "0.0.1",
+  "description": "redux-saga bindings for hypernova",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adorechic/hypernova-redux-saga.git"
+  },
+  "author": "adorechic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adorechic/hypernova-redux-saga/issues"
+  },
+  "homepage": "https://github.com/adorechic/hypernova-redux-saga#readme"
+}
