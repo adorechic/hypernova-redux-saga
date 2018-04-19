@@ -1,6 +1,6 @@
 {
   "name": "hypernova-redux-saga",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "redux-saga bindings for hypernova",
   "main": "lib/index.js",
   "scripts": {
